@@ -7,6 +7,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringIn5StepsApplication {
 
 	public static void main(String[] args) {
+
+		BinarySearchImpl binarySearchImpl = new BinarySearchImpl();
+		int result = binarySearchImpl.binarySearch(new int[] {12, 5, 8}, 5);
+
+		System.out.println("Result is : " + result);
+
 		SpringApplication.run(SpringIn5StepsApplication.class, args);
 	}
 
