@@ -2,5 +2,5 @@ package com.unixlover.springIn5Steps;
 
 public interface SortAlgorithm {
 
-    public int[] sort(int[] numbers);
+    int[] sort(int[] numbers);
 }
