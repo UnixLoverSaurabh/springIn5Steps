@@ -7,11 +7,21 @@ import org.springframework.stereotype.Component;
 public class BinarySearchImpl {
 
     @Autowired
-    SortAlgorithm sortAlgorithm;
+    private SortAlgorithm sortAlgorithm;
+
+//    Autowiring for the bean is done either using
+//            1. Constructor
+//            2. Setter
+//            3. No Constructor or no setter
 
     public BinarySearchImpl(SortAlgorithm sortAlgorithm) {
         this.sortAlgorithm = sortAlgorithm;
     }
+
+    public void setSortAlgorithm(SortAlgorithm sortAlgorithm) {
+        this.sortAlgorithm = sortAlgorithm;
+    }
+
 
     public int binarySearch(int[] numbers, int number) {
 
