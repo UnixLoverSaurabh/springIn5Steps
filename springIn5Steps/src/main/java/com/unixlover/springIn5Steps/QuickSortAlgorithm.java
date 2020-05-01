@@ -1,6 +1,6 @@
 package com.unixlover.springIn5Steps;
 
-public class QuickSortAlgorithm {
+public class QuickSortAlgorithm implements SortAlgorithm {
 
     public int[] sort(int[] numbers) {
 

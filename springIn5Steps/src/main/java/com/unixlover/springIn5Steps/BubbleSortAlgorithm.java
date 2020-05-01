@@ -1,6 +1,6 @@
 package com.unixlover.springIn5Steps;
 
-public class BubbleSortAlgorithm {
+public class BubbleSortAlgorithm implements SortAlgorithm {
 
     public int[] sort(int[] numbers) {
 
