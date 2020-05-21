@@ -18,4 +18,11 @@ public class LoginJsp extends HttpServlet {
         httpServletRequest.setAttribute("name", name);
         httpServletRequest.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(httpServletRequest, httpServletResponse);
     }
+
+    @Override
+    protected void doPost(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException {
+        httpServletRequest.setAttribute("name", httpServletRequest.getParameter("name"));
+        httpServletRequest.setAttribute("password", httpServletRequest.getParameter("password"));
+        httpServletRequest.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(httpServletRequest, httpServletResponse);
+    }
 }

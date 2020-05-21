@@ -9,8 +9,6 @@
 	<title> got the jsp view</title>
 </head>
 <body>
-    My First JSP  <%= request.getAttribute("name") %>
-    <br>
        <h1>Hello JSP! ${16/4} expression is also working ${name} </h1>
         <%
             System.out.println("You can write java code here in jsp");
@@ -22,5 +20,13 @@
         <div>
             Current date is <%= date %>
         </div>
+
+
+        <form action="/login.do" method="post">
+            <span>Enter your name</span>
+            <input type="text" name="name"> </input>
+            <input type="password" name="password"> </input>
+            <input type="submit" value="submit"> </input>
+        </form>
 </body>
 </html>

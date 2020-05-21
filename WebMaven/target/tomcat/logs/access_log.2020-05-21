@@ -1,2 +1,4 @@
-127.0.0.1 - - [21/May/2020:11:41:21 +0530] "GET /?name=saurabh%20raj HTTP/1.1" 500 3152 http-bio-8080-exec-1 390
-127.0.0.1 - - [21/May/2020:11:42:25 +0530] "GET /?name=saurabh%20raj HTTP/1.1" 200 395 http-bio-8080-exec-2 54
+0:0:0:0:0:0:0:1 - - [21/May/2020:17:08:27 +0530] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-1 26
+0:0:0:0:0:0:0:1 - - [21/May/2020:17:08:31 +0530] "GET /login.do HTTP/1.1" 200 579 http-bio-8080-exec-3 393
+0:0:0:0:0:0:0:1 - - [21/May/2020:17:09:09 +0530] "GET /login.do HTTP/1.1" 200 641 http-bio-8080-exec-4 46
+0:0:0:0:0:0:0:1 - - [21/May/2020:17:09:18 +0530] "POST /login.do HTTP/1.1" 200 230 http-bio-8080-exec-5 36
