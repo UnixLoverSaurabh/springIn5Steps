@@ -1,4 +1,4 @@
-package com.in28minutes;
+package com.in28minutes.login;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,16 +14,16 @@ public class LoginController {
 	private LoginService loginService;
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String showLoginPage() {
+	public String showLoginPage(ModelMap model) {
+		model.put("message", "a");
 		return "login";
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public String handleUserLogin(ModelMap model, @RequestParam String name,
-			@RequestParam String password) {
+	public String handleUserLogin(ModelMap model, @RequestParam String name, @RequestParam String password) {
 
 		if (!loginService.validateUser(name, password)) {
-			model.put("errorMessage", "Invalid Credentials");
+			model.put("message", "Invalid Credentials");
 			return "login";
 		}
 

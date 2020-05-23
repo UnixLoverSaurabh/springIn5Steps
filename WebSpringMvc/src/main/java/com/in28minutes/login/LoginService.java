@@ -1,4 +1,4 @@
-package com.in28minutes;
+package com.in28minutes.login;
 
 import org.springframework.stereotype.Service;
 
